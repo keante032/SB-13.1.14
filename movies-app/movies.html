@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Ratings</title>
+  </head>
+  <body>
+    <h1>Movie Ratings</h1>
+    <form id="add-movie">
+      <label for="movie-title">Movie Title: </label>
+      <input type="text" required name="movie-title" id="movie-title" />
+      <label for="movie-rating">Rating: </label>
+      <input
+        type="number"
+        required
+        min="0"
+        max="10"
+        name="movie-rating"
+        id="movie-rating"
+      />
+      <input type="submit" value="Add Movie" id="add-btn" />
+    </form>
+    <table id="ratings-table">
+      <tr id="header">
+        <td>Title</td>
+        <td>Rating</td>
+      </tr>
+    </table>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="movies.js"></script>
+  </body>
+</html>
